@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173b32">
+  <meta name="description" content="Villa Uhuy Free Ladies — tempat nyaman untuk staycation, quality time, dan menikmati suasana tropis.">
+  <title>Villa Uhuy Free Ladies | Staycation & Private Escape</title>
+  <style>
+    :root{--green:#173b32;--green2:#285b4c;--cream:#f7f4ec;--sand:#e9dfca;--gold:#c7a76a;--ink:#202923}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,90%);margin:auto}
+    header{position:absolute;z-index:5;top:0;left:0;width:100%;color:#fff}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-family:Georgia,serif;font-size:25px;letter-spacing:.5px;font-weight:bold}.brand span{color:#e4c98f}
+    nav{display:flex;gap:28px;align-items:center;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+    nav a:hover{color:#e4c98f}.nav-cta,.btn{display:inline-block;background:var(--gold);color:#172b24;padding:13px 22px;border-radius:3px;font-weight:bold;font-size:12px;letter-spacing:1px;text-transform:uppercase;transition:.2s}
+    .nav-cta:hover,.btn:hover{background:#e2c78e;transform:translateY(-2px)}
+    .hero{min-height:720px;height:92vh;max-height:900px;display:flex;align-items:center;color:white;position:relative;background:linear-gradient(90deg,rgba(9,28,22,.76),rgba(9,28,22,.18)),url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2000&q=85') center/cover}
+    .hero-content{padding-top:75px;max-width:700px}.eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#e5ca91;font-weight:bold}
+    h1{font-family:Georgia,serif;font-weight:normal;font-size:clamp(52px,8vw,94px);line-height:1.02;margin:18px 0}.hero p{font-size:17px;max-width:520px;color:#f1eee7;margin:0 0 30px}
+    .hero-note{display:block;margin-top:18px;font-size:11px;letter-spacing:2px;color:#e9dfca;text-transform:uppercase}
+    .intro{padding:105px 0;display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}.intro-photo{height:470px;background:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85') center/cover;border-radius:2px}
+    h2{font:normal clamp(36px,5vw,55px)/1.12 Georgia,serif;color:var(--green);margin:14px 0 22px}.intro p,.section-lead{color:#65716a;font-size:15px}
+    .small-label{color:#9b7b43;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:bold}.features{background:var(--green);color:#fff;padding:80px 0}.features h2{color:#fff}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:45px}
+    .feature{border-top:1px solid rgba(255,255,255,.25);padding-top:22px}.feature .num{font:30px Georgia;color:#d8bd83}.feature h3{font:22px Georgia;font-weight:normal;margin:12px 0 8px}.feature p{font-size:13px;color:#c6d0c9;margin:0}
+    .gallery{padding:100px 0}.gallery-head{text-align:center;max-width:650px;margin:0 auto 42px}.gallery-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}.gallery-grid div{background-size:cover;background-position:center}.gallery-grid .g1{grid-row:span 2;background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85')}.gallery-grid .g2{background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=85')}.gallery-grid .g3{background-image:url('https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=85')}.gallery-grid .g4{background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=85')}.gallery-grid .g5{background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=85')}
+    .booking{background:var(--sand);padding:85px 0;text-align:center}.booking h2{max-width:650px;margin:12px auto 18px}.booking p{color:#5f665f;max-width:550px;margin:0 auto 28px}
+    footer{background:#102b24;color:#d5ded8;padding:32px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-brand{font:24px Georgia;color:white}.footer-note{font-size:12px;color:#aebdb4}
+    @media(max-width:760px){.nav{height:70px}nav{gap:13px;font-size:10px}nav a:not(.nav-cta){display:none}.brand{font-size:21px}.nav-cta{padding:10px 13px}.hero{min-height:650px;height:88vh;background-position:58% center}.hero p{font-size:15px}.intro{grid-template-columns:1fr;gap:30px;padding:70px 0}.intro-photo{height:330px;order:2}.feature-grid{grid-template-columns:1fr;gap:26px}.features,.gallery{padding:70px 0}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:190px 150px 150px}.gallery-grid .g1{grid-column:span 2;grid-row:auto}.gallery-grid .g5{display:none}.footer-row{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#">VILLA <span>UHUY</span></a>
+      <nav aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a><a href="#fasilitas">Keunggulan</a><a href="#galeri">Galeri</a>
+        <a class="nav-cta" href="#booking">Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-content">
+        <div class="eyebrow">A little escape, a lot of memories</div>
+        <h1>Villa Uhuy<br><span style="color:#e5ca91">Free Ladies</span></h1>
+        <p>Temukan suasana santai untuk melepas penat, menikmati waktu bersama orang tersayang, dan menciptakan momen yang tidak terlupakan.</p>
+        <a class="btn" href="#booking">Rencanakan Staycation</a>
+        <span class="hero-note">Your private moment starts here</span>
+      </div>
+    </section>
+
+    <section class="wrap intro" id="tentang">
+      <div>
+        <div class="small-label">Welcome to Villa Uhuy</div>
+        <h2>Waktu santai, suasana istimewa.</h2>
+        <p>Villa Uhuy Free Ladies hadir sebagai pilihan tempat untuk beristirahat dan menikmati quality time. Rasakan suasana yang nyaman, privat, dan cocok untuk mengisi ulang energi dari rutinitas sehari-hari.</p>
+        <p>Datang untuk bersantai, pulang membawa cerita.</p>
+        <a class="btn" href="#booking">Info & Reservasi</a>
+      </div>
+      <div class="intro-photo" role="img" aria-label="Inspirasi suasana villa tropis"></div>
+    </section>
+
+    <section class="features" id="fasilitas">
+      <div class="wrap">
+        <div class="small-label">The Villa Experience</div>
+        <h2>Simple comfort.<br>Beautiful moments.</h2>
+        <div class="feature-grid">
+          <article class="feature"><div class="num">01</div><h3>Nyaman & Santai</h3><p>Ruang untuk beristirahat dan menikmati waktu tanpa terburu-buru.</p></article>
+          <article class="feature"><div class="num">02</div><h3>Quality Time</h3><p>Tempat untuk berkumpul, berbagi cerita, dan menciptakan kenangan.</p></article>
+          <article class="feature"><div class="num">03</div><h3>Private Escape</h3><p>Suasana liburan yang terasa lebih personal dan menyenangkan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeri">
+      <div class="wrap">
+        <div class="gallery-head">
+          <div class="small-label">A glimpse of the stay</div>
+          <h2>See you at Villa Uhuy.</h2>
+          <p class="section-lead">Sedikit gambaran suasana untuk membayangkan waktu istimewa Anda.</p>
+        </div>
+        <div class="gallery-grid" aria-label="Galeri inspirasi villa">
+          <div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="wrap">
+        <div class="small-label">Make it happen</div>
+        <h2>Siap menikmati waktu di Villa Uhuy?</h2>
+        <p>Hubungi pengelola untuk informasi lokasi, fasilitas, harga, dan ketersediaan tanggal menginap.</p>
+        <!-- Ganti # dengan link WhatsApp resmi, contoh: https://wa.me/628xxxxxxxxxx -->
+        <a class="btn" href="mailto:booking@villauhuy.com?subject=Informasi%20Villa%20Uhuy">Hubungi untuk Booking</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div class="footer-brand">VILLA UHUY</div>
+      <div class="footer-note">© 2026 Villa Uhuy Free Ladies. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
